@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Hayun's Art Portfolio</title>
+  <link rel="icon" href="favicon.png">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="css/frontPage.css" rel="stylesheet">
+</head>
+
+<body>
+<nav class="navbar navbar-default navbar-expand-lg navbar-light bg-light shadow fixed-top" id="portfolioNav">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Hayun Chong</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+<!--         <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li> -->
+        <li class="nav-item">
+          <a class="nav-link" href="resume.html">Resume</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="artPortfolio.html">Art Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="technicalProject.html">Technical Projects</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="mb-0" id="resume">
+    <div class="container">
+      <h2 class="text-center text-uppercase">Art Portfolio</h2>
+      <h2 class="mb-5"></h2>
+    </div>
+</section>
+ 
+<section class="py-5">
+    <!-- Page Content -->
+  <div class="container page-top">
+
+    <div class="row">
+          <div class="col-md-6 col-lg-4 image">
+              <img src="img/portfolio/01.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+          </div>
+          <div class="col-md-6 col-lg-4 image">
+              <img src="img/portfolio/02.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+          </div>
+          <div class="col-md-6 col-lg-4 image">
+              <img src="img/portfolio/03.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+          </div>
+          <div class="col-md-6 col-lg-4 image">
+              <img src="img/portfolio/04.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+          </div>
+          <div class="col-md-6 col-lg-4 image">
+              <img src="img/portfolio/05.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+          </div>
+          <div class="col-md-6 col-lg-4 image">
+              <img src="img/portfolio/06.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+          </div>
+          <div class="col-md-6 col-lg-4 image">
+              <img src="img/portfolio/07.jpg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+          </div>
+          <div class="col-md-6 col-lg-4 image">
+              <img src="img/portfolio/08.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+          </div>
+          <div class="col-md-6 col-lg-4 image">
+              <img src="img/portfolio/09.jpg" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+          </div>
+          <div class="col-md-6 col-lg-4 image">
+              <img src="img/portfolio/10.jpg" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+          </div>
+          <div class="col-md-6 col-lg-4 image">
+              <img src="img/portfolio/11.jpg" style="width:100%" onclick="openModal();currentSlide(11)" class="hover-shadow cursor">
+          </div>
+          <div class="col-md-6 col-lg-4 image">
+              <img src="img/portfolio/12.jpg" style="width:100%" onclick="openModal();currentSlide(12)" class="hover-shadow cursor">
+          </div>
+          <div class="col-md-6 col-lg-4 image">
+              <img src="img/portfolio/13.jpg" style="width:100%" onclick="openModal();currentSlide(13)" class="hover-shadow cursor">
+          </div>
+          <div class="col-md-6 col-lg-4 image">
+              <img src="img/portfolio/14.jpg" style="width:100%" onclick="openModal();currentSlide(14)" class="hover-shadow cursor">
+          </div>
+          <div class="col-md-6 col-lg-4 image">
+              <img src="img/portfolio/15.jpg" style="width:100%" onclick="openModal();currentSlide(15)" class="hover-shadow cursor">
+          </div>
+
+</section>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <img src="img/portfolio/01.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <img src="img/portfolio/02.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <img src="img/portfolio/03.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <img src="img/portfolio/04.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <img src="img/portfolio/05.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <img src="img/portfolio/06.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <img src="img/portfolio/07.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <img src="img/portfolio/08.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <img src="img/portfolio/09.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <img src="img/portfolio/10.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <img src="img/portfolio/11.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <img src="img/portfolio/12.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <img src="img/portfolio/13.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <img src="img/portfolio/14.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <img src="img/portfolio/15.jpg" style="width:100%">
+    </div>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+  </div>
+</div>
+    </div>
+
+<script src="js/portfolio.js"></script>
+
+</body>
+
+</html>

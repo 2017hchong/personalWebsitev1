@@ -1,0 +1,278 @@
+
+body{
+	padding: 50px 0 0 0;
+}
+
+.primary {
+	color: #6C63FF;
+}
+
+.frontFontHead {
+    font-family: "Kelly Slab"; 
+    font-size: 50px; 
+    font-style: normal; 
+    font-variant: small-caps; 
+    font-weight: 700; 
+    line-height: 60px;
+}
+
+.frontFont {
+    font-family: "Kelly Slab"; 
+    font-size: 23px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 500; 
+    line-height: 30px;
+}
+
+
+/* navbar */
+.navbar-default {
+    background-color: #F8F8F8;
+    border-color: #E7E7E7;
+}
+/* Title */
+.navbar-default .navbar-brand {
+    color: #514ABF;
+    font-family: "Kelly Slab"; 
+    font-size: 40px; 
+    font-style: normal; 
+    font-variant: small-caps; 
+    font-weight: 700; 
+    line-height: 40px; 
+
+  }
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #292560;
+}
+/* Link */
+.navbar-default .navbar-nav > li > a {
+    color: #777;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #333;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #555;
+    background-color: #E7E7E7;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+    color: #555;
+    background-color: #D5D5D5;
+}
+/* Caret */
+.navbar-default .navbar-nav > .dropdown > a .caret {
+    border-top-color: #777;
+    border-bottom-color: #777;
+}
+.navbar-default .navbar-nav > .dropdown > a:hover .caret,
+.navbar-default .navbar-nav > .dropdown > a:focus .caret {
+    border-top-color: #333;
+    border-bottom-color: #333;
+}
+.navbar-default .navbar-nav > .open > a .caret,
+.navbar-default .navbar-nav > .open > a:hover .caret,
+.navbar-default .navbar-nav > .open > a:focus .caret {
+    border-top-color: #555;
+    border-bottom-color: #555;
+}
+
+.masthead {
+  height: 105vh;
+  min-height: 500px;
+}
+
+section {
+  padding: 6rem 0;
+}
+
+section h2 {
+  font-size: 2.25rem;
+  line-height: 2rem;
+}
+
+/* ---- particles.js container ---- */
+#particles-js{
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  background-color: #0E0C20;
+  background-image: url('../img/workingLate.svg');
+  background-size: 90%;/*
+  background-position: center;*/
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* Add the blur effect */
+/*  filter: blur(8px);
+  -webkit-filter: blur(8px);*/
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#titleName{
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+
+
+
+
+/*Portfolio!!!*/
+#portfolioNav {
+	display:block;
+}
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  /*width: 90%;*/
+  max-width: 700px;
+  max-height: 500px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 0px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 60%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 35px;
+  transition: 0.6s ease;
+  border-radius: 0 10px 10px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 10px 0 0 10px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(1, 1, 1, 0.8);
+}
+
+.image {
+	padding-bottom: 30px;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.aboutMe {
+	text-align:center;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

@@ -1,1 +1,67 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>About Hayun Chong</title>
+  <link rel="icon" href="favicon.png">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Kelly+Slab" />
+  <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="css/frontPage.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Full Page Image Header with Vertically Centered Content -->
+<header class="masthead">
+  <nav class="navbar navbar-default navbar-expand-lg shadow fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Hayun Chong</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+<!--         <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li> -->
+        <li class="nav-item">
+          <a class="nav-link" href="resume.html">Resume</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="artPortfolio.html">Art Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="technicalProject.html">Technical Projects</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  <div id="particles-js">
+
+  <div id="titleName">
+    <img class="img-profile rounded-circle mx-auto mb-2 border shadow-lg" src="img/profile.jpeg" alt="" height="150">
+    <h1 class="frontFontHead">Hi! I'm Hayun Chong</h1>
+    <p class="frontFont">I am a sophomore at Columbia University studying computer science on the vision and graphics track.</p>
+  </div>
+</header>
+
+<!-- scripts -->
+<script src="particles.js"></script>
+<script src="js/app.js"></script>
+
+<script>
+  var update;
+  update = function() {
+    requestAnimationFrame(update);
+  };
+  requestAnimationFrame(update);
+</script>
+
+</body>
+</html>
