@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-default navbar-expand-lg navbar-light bg-light shadow fixed-top">
+  <nav class="navbar navbar-default navbar-expand-lg navbar-light bg-light shadow fixed-top" id="portfolioNav">
     <div class="container">
       <a class="navbar-brand" href="index.html">Hayun Chong</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,21 +32,338 @@
     </div>
   </nav>
 
-
-
   <!-- Resume Section -->
   <section class="mb-0" id="resume">
     <div class="container">
       <h2 class="text-center text-uppercase">Technical Projects</h2>
       <h2 class="mb-5"></h2>
+       
+<hr>
+     
+  <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+    <div class="resume-content">
+      <h5 class="mb-0">Half-Edge Data Structure and Mesh Simplification Implementation</h5>
+      <div class="subheading mb-3">Class Project</div>
+      <div>
+        <ul>
+          <li>Implemented a Half-Edge data structure for triangle meshes</li>
+          <li>Simplified triangle meshes with a mesh simplification algorithm using quadrics</li>
+        </ul>
+      </div>
+    </div>
+    <div class="resume-date text-md-right">
+      <span class="primary">2019</span><br>
+    </div>
+  </div>
+  
+<section class="py-0 my-0">
+  Mesh simplification of a bunny with Half-edge data structure with stopping ratio of 0.005.
+    <br>
+    <br>
+  <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-2">
+    <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-2">
+    <div class="row .no-gutters">
+          <div class="col-md-4 col-lg-3 image">
+              <img src="img/halfEdge/bunnyOriginal.png" style="width:100%" onclick="openModal('bunnyModal');currentSlide('mySlides5',1)" class="hover-shadow cursor">
+              <br>
+               Original image (69630 faces)
+          </div>
+          <div class="col-md-4 col-lg-3 image">
+              <img src="img/halfEdge/bunnySimplified1.png" style="width:100%" onclick="openModal('bunnyModal');currentSlide('mySlides5',2)" class="hover-shadow cursor">
+              <br>
+              Simplified 1 time (23814 faces)
+          </div>
+          <div class="col-md-4 col-lg-3 image">
+              <img src="img/halfEdge/bunnySimplified2.png" style="width:100%" onclick="openModal('bunnyModal');currentSlide('mySlides5',3)" class="hover-shadow cursor">
+              <br>
+              Simplified 2 times (17406 faces)
+          </div>
+          <div class="col-md-4 col-lg-3 image">
+              <img src="img/halfEdge/bunnySimplified3.png" style="width:100%" onclick="openModal('bunnyModal');currentSlide('mySlides5',4)" class="hover-shadow cursor">
+              <br>
+              Simplified 3 times (8702 faces)
+          </div>
+          <div class="col-md-4 col-lg-3 image">
+              <img src="img/halfEdge/bunnySimplified4.png" style="width:100%" onclick="openModal('bunnyModal');currentSlide('mySlides5',5)" class="hover-shadow cursor">
+              <br>
+              Simplified 4 times (4350 faces)
+          </div>
+          <div class="col-md-4 col-lg-3 image">
+              <img src="img/halfEdge/bunnySimplified5.png" style="width:100%" onclick="openModal('bunnyModal');currentSlide('mySlides5',6)" class="hover-shadow cursor">
+              <br>
+              Simplified 5 times (2174 faces)
+          </div>
+          <div class="col-md-4 col-lg-3 image">
+              <img src="img/halfEdge/bunnySimplified6.png" style="width:100%" onclick="openModal('bunnyModal');currentSlide('mySlides5',7)" class="hover-shadow cursor">
+              <br>
+              Simplified 6 times (1086 faces)
+          </div>
+          <div class="col-md-4 col-lg-3 image">
+              <img src="img/halfEdge/bunnySimplified7.png" style="width:100%" onclick="openModal('bunnyModal');currentSlide('mySlides5',8)" class="hover-shadow cursor">
+              <br>
+              Simplified 7 times (542 faces)
+          </div>
+          <br>
+    </div>
+  </div>
+  </div>
+
+<div id="bunnyModal" class="modal">
+    <span class="close cursor" onclick="closeModal('bunnyModal')">&times;</span>
+    <a class="prev" onclick="plusSlides('mySlides5',-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides('mySlides5',1)">&#10095;</a>
+    <div class="modal-content">
+
+      <div class="mySlides5">
+        <img src="img/halfEdge/bunnyOriginal.png" style="width:100%">
+        <h3></h3>
+        <div class="caption-container">
+          <h3 id="text-secondary text-uppercase mb-0">Original image (69630 faces)</h3>
+        </div>
+      </div>
+
+      <div class="mySlides5">
+        <img src="img/halfEdge/bunnySimplified1.png" style="width:100%">
+        <h3></h3>
+        <div class="caption-container">
+          <h3 id="text-secondary text-uppercase mb-0">Simplified 1 time (23814 faces)</h3>
+        </div>
+      </div>
+
+      <div class="mySlides5">
+        <img src="img/halfEdge/bunnySimplified2.png" style="width:100%">
+        <h3></h3>
+        <div class="caption-container">
+          <h3 id="text-secondary text-uppercase mb-0">Simplified 2 times (17406 faces)</h3>
+        </div>
+      </div>
+
+      <div class="mySlides5">
+        <img src="img/halfEdge/bunnySimplified3.png" style="width:100%">
+        <h3></h3>
+        <div class="caption-container">
+          <h3 id="text-secondary text-uppercase mb-0">Simplified 3 times (8702 faces)</h3>
+        </div>
+      </div>
+
+      <div class="mySlides5">
+        <img src="img/halfEdge/bunnySimplified4.png" style="width:100%">
+        <h3></h3>
+        <div class="caption-container">
+          <h3 id="text-secondary text-uppercase mb-0">Simplified 4 times (4350 faces)</h3>
+        </div>
+      </div>
+
+      <div class="mySlides5">
+        <img src="img/halfEdge/bunnySimplified5.png" style="width:100%">
+        <h3></h3>
+        <div class="caption-container">
+          <h3 id="text-secondary text-uppercase mb-0">Simplified 5 times (2174 faces)</h3>
+        </div>
+      </div>
+
+      <div class="mySlides5">
+        <img src="img/halfEdge/bunnySimplified6.png" style="width:100%">
+        <h3></h3>
+        <div class="caption-container">
+          <h3 id="text-secondary text-uppercase mb-0">Simplified 6 times (1086 faces)</h3>
+        </div>
+      </div>
+
+      <div class="mySlides5">
+        <img src="img/halfEdge/bunnySimplified7.png" style="width:100%">
+        <h3></h3>
+        <div class="caption-container">
+          <h3 id="text-secondary text-uppercase mb-0">Simplified 7 times with 542 faces</h3>
+        </div>
+      </div>
       
+    </div>
+  </div>
+
+</section>
+
+<hr>
+
+  <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+    <div class="resume-content">
+      <h5 class="mb-0">Ray Tracer</h5>
+      <div class="subheading mb-3">Class Project</div>
+      <div>
+        <ul>
+          <li>Created a Ray Tracer using Monte Carlo rendering algorithm in java for COMS 4160</li>
+          <li>Implemented three ray tracers: direct illumination, global illumination with brute force termination, and  global illumination using Russian Roulette algorithm for termination</li>
+        </ul>
+      </div>
+    </div>
+    <div class="resume-date text-md-right">
+      <span class="primary">2019</span><br>
+    </div>
+  </div>
+<section class="py-0 my-0">
+  Comparison between three different rendering processes. Each image generated with 200 samples per pixel. 
+  <br>
+  <br>
+  <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-2">
+    <div class="row">
+          <div class="col-md-6 col-lg-4 image">
+              <img src="img/rayTracing/cbox-direct.xml-200Samples.png" style="width:100%" onclick="openModal('cboxModal');currentSlide('mySlides',1)" class="hover-shadow cursor">
+              <br>
+               Direct Illumination
+          </div>
+          <div class="col-md-6 col-lg-4 image">
+              <img src="img/rayTracing/cbox-global.xml-200Samples.png" style="width:100%" onclick="openModal('cboxModal');currentSlide('mySlides',2)" class="hover-shadow cursor">
+              <br>
+              Global Illumination with Brute Force Termination
+          </div>
+          <div class="col-md-6 col-lg-4 image">
+              <img src="img/rayTracing/cbox-RR.xml.0.75-200Samples.png" style="width:100%" onclick="openModal('cboxModal');currentSlide('mySlides',3)" class="hover-shadow cursor">
+              <br>
+              Global Illumination with Russian Roulette Termination (Probability of 0.75)
+          </div>
+          <br>
+    </div>
+  </div>
+  <div id="cboxModal" class="modal">
+    <span class="close cursor" onclick="closeModal('cboxModal')">&times;</span>
+    <a class="prev" onclick="plusSlides('mySlides',-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides('mySlides',1)">&#10095;</a>
+    <div class="modal-content">
+
+      <div class="mySlides">
+        <img src="img/rayTracing/cbox-direct.xml-200Samples.png" style="width:100%">
+        <h3></h3>
+        <div class="caption-container">
+          <h3 id="text-secondary text-uppercase mb-0">Direct Illumination</h3>
+          <h4 class="">200 Samples</h4>
+        </div>
+      </div>
+
+      <div class="mySlides">
+        <img src="img/rayTracing/cbox-global.xml-200Samples.png" style="width:100%">
+        <h3></h3>
+        <div class="caption-container">
+          <h3 id="text-secondary text-uppercase mb-0">Global Illumination with Brute Force Termination</h3>
+          <h4 class="">200 Samples</h4>
+        </div>
+      </div>
+
+      <div class="mySlides">
+        <img src="img/rayTracing/cbox-RR.xml.0.75-200Samples.png" style="width:100%">
+        <h3></h3>
+        <div class="caption-container">
+          <h3 id="text-secondary text-uppercase mb-0">Global Illumination with Russian Roulette Termination</h3>
+          <h4 class="">200 Samples. p = 0.75</h4>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="py-0 my-0">
+  Rendering of a different scene with 100 samples. Shows comparison between direct illumination, global illumination (Russian Roulette termination), and mirror property.
+  <br>
+  <br>
+  <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-2">
+    <div class="row">
+          <div class="col-md-6 col-lg-4 image">
+              <img src="img/rayTracing/image4.xml-direct-100Samples.png" style="width:100%" onclick="openModal('colorLightsModal');currentSlide('mySlides2',1)" class="hover-shadow cursor">
+              <br>
+               Direct Illumination
+          </div>
+          <div class="col-md-6 col-lg-4 image">
+              <img src="img/rayTracing/image4.xml-100Samples-RR.png" style="width:100%" onclick="openModal('colorLightsModal');currentSlide('mySlides2',2)" class="hover-shadow cursor">
+              <br>
+              Global Illumination with Russian Roulette Termination
+          </div>
+          <div class="col-md-6 col-lg-4 image">
+              <img src="img/rayTracing/image4.xml-100samples.png" style="width:100%" onclick="openModal('colorLightsModal');currentSlide('mySlides2',3)" class="hover-shadow cursor">
+              <br>
+              Global Illumination with reflective spheres
+          </div>
+          <br>
+    </div>
+  </div>
+  <div id="colorLightsModal" class="modal">
+    <span class="close cursor" onclick="closeModal('colorLightsModal')">&times;</span>
+    <a class="prev" onclick="plusSlides('mySlides2', -1)">&#10094;</a>
+    <a class="next" onclick="plusSlides('mySlides2',1)">&#10095;</a>
+    <div class="modal-content">
+
+      <div class="mySlides2">
+        <img src="img/rayTracing/image4.xml-direct-100Samples.png" style="width:100%">
+        <h3></h3>
+        <div class="caption-container">
+          <h3 id="text-secondary text-uppercase mb-0">Direct Illumination</h3>
+          <h4 class="">100 Samples</h4>
+        </div>
+      </div>
+
+      <div class="mySlides2">
+        <img src="img/rayTracing/image4.xml-100Samples-RR.png" style="width:100%">
+        <h3></h3>
+        <div class="caption-container">
+          <h3 id="text-secondary text-uppercase mb-0">Global Illumination with Russian Roulette Termination</h3>
+          <h4 class="">100 Samples</h4>
+        </div>
+      </div>
+
+      <div class="mySlides2">
+        <img src="img/rayTracing/image4.xml-100samples.png" style="width:100%">
+        <h3></h3>
+        <div class="caption-container">
+          <h3 id="text-secondary text-uppercase mb-0">Global Illumination with Reflective Properties</h3>
+          <h4 class="">100 Samples</h4>
+        </div>
+      </div>
+  </div>
+</section>
+
+<section class="py-0 my-0">
+  A couple more rendered images with 100 samples using global illumination.
+  <br>
+  <br>
+  <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-2">
+    <div class="row">
+          <div class="col-md-6 col-lg-6 image">
+              <img src="img/rayTracing/image1.xml-100Samples.png" style="width:100%" onclick="openModal('otherModal');currentSlide('mySlides4',1)" class="hover-shadow cursor">
+          </div>
+          <div class="col-md-6 col-lg-6 image">
+              <img src="img/rayTracing/cbox-reflection.xml-100Samples.png" style="width:100%" onclick="openModal('otherModal');currentSlide('mySlides4',2)" class="hover-shadow cursor">
+          </div>
+          <br>
+    </div>
+  </div>
+  <div id="otherModal" class="modal">
+    <span class="close cursor" onclick="closeModal('otherModal')">&times;</span>
+    <a class="prev" onclick="plusSlides('mySlides4', -1)">&#10094;</a>
+    <a class="next" onclick="plusSlides('mySlides4', 1)">&#10095;</a>
+    <div class="modal-content">
+
+      <div class="mySlides4">
+        <img src="img/rayTracing/image1.xml-100Samples.png" style="width:100%">
+        <h3></h3>
+      </div>
+
+      <div class="mySlides4">
+        <img src="img/rayTracing/cbox-reflection.xml-100Samples.png" style="width:100%">
+        <h3></h3>
+      </div>
+  </div>
+</section>
+
+<hr>
+     
   <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
     <div class="resume-content">
       <h5 class="mb-0">Shader Implementation</h5>
       <div class="subheading mb-3">Class Project</div>
       <div>
-        • Implemented 6 different shaders using java and GLSL for COMS 4160<br>
-        • Implemented the Gourand shader, Texture-modulated Smooth shader, checkerboard texture, wireframe texture, CEL Shader, and Gooch Shader<br>
+        <ul>
+          <li>Implemented 6 different shaders using java and GLSL for COMS 4160</li>
+          <li>Implemented the Gourand shader, Texture-modulated Smooth shader, checkerboard texture, wireframe texture, CEL Shader, and Gooch Shader</li>
+        </ul>
       </div>
     </div>
     <div class="resume-date text-md-right">
@@ -54,25 +371,27 @@
     </div>
   </div>
   <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/2fd7xEpf6DU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/-XiTtGFlOXQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
   <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
     <a href="img/shaderImplementation.pdf">
-      <img src="img/shaderImplementation.jpg" width="700" height="500">
+      <img src="img/shaderImplementation.jpg" width="900" height="500">
     </a>
   </div>
 
 
-
+<hr>
       
   <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
     <div class="resume-content">
       <h5 class="mb-0">Foreign Meadow</h5>
       <div class="subheading mb-3">Class Project</div>
       <div>
-        • Created a foreign meadow using java and GLSL for COMS 4160<br>
-        • Programmed the geometric transformation matrices and experimented with camera view<br>
-        • Designed the objects in the meadow and programmed their animation including butterfly movement and movement of each blade of grass
+        <ul>
+          <li>Created a foreign meadow using java and GLSL for COMS 4160</li>
+          <li>Programmed the geometric transformation matrices and experimented with camera view</li>
+          <li>Designed the objects in the meadow and programmed their animation including butterfly movement and movement of each blade of grass</li>
+        </ul>
       </div>
     </div>
     <div class="resume-date text-md-right">
@@ -82,28 +401,33 @@
   <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
       <iframe width="560" height="315" src="https://www.youtube.com/embed/2fd7xEpf6DU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
-
+  <hr>
   <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
     <div class="resume-content">
       <h5 class="mb-0">Network Server</h5>
       <div class="subheading mb-3">Class Project</div>
       <div>
-        • Used netcat to create a program that allows remote access to a database lookup program.
+        <ul>
+          <li>Used netcat to create a program that allows remote access to a database lookup program</li>
+        </ul>
       </div>
     </div>
     <div class="resume-date text-md-right">
       <span class="primary">2018</span><br>
     </div>
   </div>
+  <hr>
   <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
     <div class="resume-content">
       <h5 class="mb-0">Identifying Speech Bubbles: Creating Identifying Speech Bubbles for Characters in Video</h5>
       <div class="subheading mb-3">Individual Project</div>
       <div>
-        • Created a program in python to detect when characters are talking and create automatic subtitles for that character<br>
-        • Implemented Google WebRTC Voice Activity Detector, Google Speech Recognition for voice detection<br>
-        • Implemented OpenCV and Haar Cascades and Dlib facial landmark detection libraries for mouth detection<br>
-        • Succeeded in detecting moving mouths and the corresponding spoken words
+        <ul>
+          <li>Created a program in python to detect when characters are talking and create automatic subtitles for that character</li>
+          <li>Implemented Google WebRTC Voice Activity Detector, Google Speech Recognition for voice detection</li>
+          <li>Implemented OpenCV and Haar Cascades and Dlib facial landmark detection libraries for mouth detection</li>
+          <li>Succeeded in detecting moving mouths and the corresponding spoken words</li>
+        </ul>
       </div>
     </div>
     <div class="resume-date text-md-right">
@@ -120,44 +444,33 @@
       <img src="img/poster.jpg" width="700" height="500">
     </a>
   </div>
-
-  <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-    <div class="resume-content">
-      <h5 class="mb-0">Ray Tracer</h5>
-      <div class="subheading mb-3"></div>
-      <div>
-      • Created a Ray Tracer using C to trace out an image with three spheres <br>
-      • Implemented parallel programming<br>
-      • Experimented with different effects for shadows and reflections 
-      </div>
-    </div>
-    <div class="resume-date text-md-right">
-      <span class="primary">2017</span><br>
-    </div>
-  </div>
+  <hr>
   <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
     <div class="resume-content">
       <h5 class="mb-0">Othello Game</h5>
       <div class="subheading mb-3"></div>
       <div>
-      • Implemented the Alpha-beta pruning algorithm for the computer at a depth of 6 to play the Othello Game
+        <ul>
+          <li>Implemented the Alpha-beta pruning algorithm for the computer at a depth of 6 to play the Othello Game</li>
+        </ul>
       </div>
     </div>
     <div class="resume-date text-md-right">
       <span class="primary">2017</span><br>
     </div>
   </div>
-
   <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/nS8Fo8B677M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
-
+  <hr>
   <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
     <div class="resume-content">
       <h5 class="mb-0">Fractal Flower</h5>
       <div class="subheading mb-3"></div>
       <div>
-      • Created a flower using fractals in python
+        <ul>
+          <li>Created a flower using fractals in python</li>
+        </ul>
       </div>
     </div>
     <div class="resume-date text-md-right">
@@ -167,6 +480,8 @@
   <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/OAa6mwlNitE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
+
+<script src="js/portfolio.js"></script>
 
 </body>
 
