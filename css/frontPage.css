@@ -14,6 +14,12 @@ body{
     font-weight: 700; 
     line-height: 60px;
 }
+.frontFontHead em{    
+    color: #ffb3b3;
+    font-style: normal;
+    font-size: 66px;
+    font-variant: small-caps; 
+}
 
 .frontFont {
     font-family: "Kelly Slab"; 
@@ -22,6 +28,12 @@ body{
     font-variant: normal; 
     font-weight: 500; 
     line-height: 30px;
+}
+
+.frontFont em {
+    color: #ffcccc;
+    font-style: normal;
+    font-size: 27px;
 }
 
 
